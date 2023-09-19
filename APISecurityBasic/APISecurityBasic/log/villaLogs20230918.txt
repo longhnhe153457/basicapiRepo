@@ -1,0 +1,192 @@
+2023-09-18 17:18:54.347 +07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-09-18 17:18:54.870 +07:00 [INF] Entity Framework Core 6.0.20 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+2023-09-18 17:18:54.973 +07:00 [DBG] DetectChanges starting for 'ApplicationDBContext'.
+2023-09-18 17:18:54.975 +07:00 [DBG] DetectChanges completed for 'ApplicationDBContext'.
+2023-09-18 17:18:55.037 +07:00 [DBG] 'ApplicationDBContext' disposed.
+2023-09-18 17:19:37.348 +07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-09-18 17:19:37.782 +07:00 [INF] Entity Framework Core 6.0.20 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: None
+2023-09-18 17:19:37.856 +07:00 [DBG] Migrating using database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:37.868 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:38.332 +07:00 [DBG] An error occurred using the connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:38.333 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:38.337 +07:00 [DBG] An error occurred using the connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:38.385 +07:00 [DBG] Opening connection to database 'master' on server '.'.
+2023-09-18 17:19:38.409 +07:00 [DBG] Opened connection to database 'master' on server '.'.
+2023-09-18 17:19:38.415 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:38.421 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (4ms).
+2023-09-18 17:19:38.428 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Magic_VillaAPI];
+2023-09-18 17:19:39.071 +07:00 [INF] Executed DbCommand (640ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Magic_VillaAPI];
+2023-09-18 17:19:39.072 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.072 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.072 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Magic_VillaAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-09-18 17:19:39.261 +07:00 [INF] Executed DbCommand (189ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Magic_VillaAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-09-18 17:19:39.262 +07:00 [DBG] Closing connection to database 'master' on server '.'.
+2023-09-18 17:19:39.265 +07:00 [DBG] Closed connection to database 'master' on server '.'.
+2023-09-18 17:19:39.267 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.270 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.271 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.271 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.271 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-18 17:19:39.280 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-18 17:19:39.280 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.280 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.345 +07:00 [DBG] DetectChanges starting for 'ApplicationDBContext'.
+2023-09-18 17:19:39.347 +07:00 [DBG] DetectChanges completed for 'ApplicationDBContext'.
+2023-09-18 17:19:39.360 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.360 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.360 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.361 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.361 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-09-18 17:19:39.387 +07:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-09-18 17:19:39.387 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.387 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.388 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.388 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.388 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.388 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.388 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-18 17:19:39.388 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-18 17:19:39.388 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.388 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.399 +07:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-09-18 17:19:39.400 +07:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-09-18 17:19:39.400 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.400 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.400 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-18 17:19:39.430 +07:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-18 17:19:39.430 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.431 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.434 +07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-09-18 17:19:39.434 +07:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-09-18 17:19:39.434 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.434 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.435 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-18 17:19:39.486 +07:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-18 17:19:39.490 +07:00 [DBG] A data reader was disposed.
+2023-09-18 17:19:39.491 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.491 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.516 +07:00 [INF] Applying migration '20230918101854_addVillaTable'.
+2023-09-18 17:19:39.530 +07:00 [DBG] Opening connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.530 +07:00 [DBG] Opened connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.531 +07:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-09-18 17:19:39.538 +07:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-09-18 17:19:39.538 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.538 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.539 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Villas] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Details] nvarchar(max) NOT NULL,
+    [Rate] float NOT NULL,
+    [Sqft] int NOT NULL,
+    [Occupany] int NOT NULL,
+    [ImageUrl] nvarchar(max) NOT NULL,
+    [Amentity] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Villas] PRIMARY KEY ([Id])
+);
+2023-09-18 17:19:39.544 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Villas] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Details] nvarchar(max) NOT NULL,
+    [Rate] float NOT NULL,
+    [Sqft] int NOT NULL,
+    [Occupany] int NOT NULL,
+    [ImageUrl] nvarchar(max) NOT NULL,
+    [Amentity] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Villas] PRIMARY KEY ([Id])
+);
+2023-09-18 17:19:39.545 +07:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-18 17:19:39.545 +07:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-18 17:19:39.545 +07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230918101854_addVillaTable', N'6.0.20');
+2023-09-18 17:19:39.553 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230918101854_addVillaTable', N'6.0.20');
+2023-09-18 17:19:39.554 +07:00 [DBG] Committing transaction.
+2023-09-18 17:19:39.556 +07:00 [DBG] Committed transaction.
+2023-09-18 17:19:39.556 +07:00 [DBG] Disposing transaction.
+2023-09-18 17:19:39.556 +07:00 [DBG] Closing connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.556 +07:00 [DBG] Closed connection to database 'Magic_VillaAPI' on server '.'.
+2023-09-18 17:19:39.557 +07:00 [DBG] 'ApplicationDBContext' disposed.
+2023-09-18 23:38:34.418 +07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-18 23:38:35.117 +07:00 [DBG] Hosting starting
+2023-09-18 23:38:35.457 +07:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9E4340228AC9060BC4FBEE89EF0DC853EBBB6EB1)
+2023-09-18 23:38:35.541 +07:00 [INF] Now listening on: https://localhost:7019
+2023-09-18 23:38:35.542 +07:00 [INF] Now listening on: http://localhost:5238
+2023-09-18 23:38:35.542 +07:00 [DBG] Loaded hosting startup assembly APISecurityBasic
+2023-09-18 23:38:35.542 +07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-18 23:38:35.542 +07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-18 23:38:35.542 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-18 23:38:35.542 +07:00 [INF] Hosting environment: Development
+2023-09-18 23:38:35.542 +07:00 [INF] Content root path: C:\Users\hoang\OneDrive\Desktop\hoclai.net\APISecurityBasic\APISecurityBasic\
+2023-09-18 23:38:35.542 +07:00 [DBG] Hosting started
+2023-09-18 23:38:35.571 +07:00 [DBG] Connection id "0HMTOCMQ1E5QV" accepted.
+2023-09-18 23:38:35.572 +07:00 [DBG] Connection id "0HMTOCMQ1E5QV" started.
+2023-09-18 23:38:35.603 +07:00 [DBG] Connection id "0HMTOCMQ1E5R0" accepted.
+2023-09-18 23:38:35.603 +07:00 [DBG] Connection id "0HMTOCMQ1E5R0" started.
+2023-09-18 23:38:36.764 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" accepted.
+2023-09-18 23:38:36.769 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" started.
+2023-09-18 23:38:37.209 +07:00 [DBG] Connection 0HMTOCMQ1E5R1 established using the following protocol: "Tls12"
+2023-09-18 23:38:37.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7019/swagger/index.html - -
+2023-09-18 23:38:37.639 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-18 23:38:37.713 +07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-18 23:38:37.713 +07:00 [DBG] Request did not match any endpoints
+2023-09-18 23:38:38.017 +07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-18 23:38:39.046 +07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-18 23:38:39.061 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7019/swagger/index.html - - - 200 - text/html;charset=utf-8 1596.0177ms
+2023-09-18 23:38:39.097 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7019/_framework/aspnetcore-browser-refresh.js - -
+2023-09-18 23:38:39.105 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7019/_vs/browserLink - -
+2023-09-18 23:38:39.110 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7019/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 12.8611ms
+2023-09-18 23:38:39.408 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7019/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 302.8141ms
+2023-09-18 23:38:39.777 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7019/swagger/v1/swagger.json - -
+2023-09-18 23:38:39.779 +07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-18 23:38:39.779 +07:00 [DBG] Request did not match any endpoints
+2023-09-18 23:38:40.149 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7019/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 371.2702ms
+2023-09-18 23:38:45.611 +07:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-09-18 23:38:45.617 +07:00 [DBG] Connection id "0HMTOCMQ1E5QV" stopped.
+2023-09-18 23:38:45.619 +07:00 [DBG] Connection id "0HMTOCMQ1E5QV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-18 23:38:45.619 +07:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-09-18 23:38:45.620 +07:00 [DBG] Connection id "0HMTOCMQ1E5R0" stopped.
+2023-09-18 23:38:45.620 +07:00 [DBG] Connection id "0HMTOCMQ1E5R0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-18 23:38:47.741 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" received FIN.
+2023-09-18 23:38:47.745 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" is closed. The last processed stream ID was 7.
+2023-09-18 23:38:47.745 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" sending FIN because: "The client closed the connection."
+2023-09-18 23:38:47.754 +07:00 [DBG] Connection id "0HMTOCMQ1E5R1" stopped.
